@@ -1,0 +1,7 @@
+baseURL = "/"
+languageCode = "ru"
+title = "My New Hugo Site"
+theme="starter"
+disableHugoGeneratorInject = true
+[params]
+	favicom = "favicon.ico"

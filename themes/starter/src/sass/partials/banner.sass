@@ -1,0 +1,61 @@
+.banner
+	background-color: #efeeee
+	display: flex
+	border-bottom: 4px solid #969696
+	.side-nav
+		width: 250px
+		display: flex
+		align-items: center
+		ul
+			list-style: none
+			padding-left: 4rem
+			li
+				height: 45px
+				position: relative
+				cursor: pointer
+				a
+					color: #333
+					text-decoration: none					
+				&:before
+					content: ''
+					height: 35px
+					width: 32px
+					display: inline-block
+					background-image: url(/contact.webp)
+					background-repeat: no-repeat
+					position: absolute
+					left: -3rem
+					top: -5px
+				&.vacancy
+					&:before
+						background-position: 4px 0px
+					&:hover
+						&:before
+							background-position: 4px -35px
+				&.review
+					&:before
+						background-position: -32px 0px
+					&:hover
+						&:before
+							background-position: -32px -35px			
+
+				&.video
+					&:before
+						background-position: -64px 0px
+					&:hover
+						&:before
+							background-position: -64px -35px		
+
+				&.nofake
+					&:before
+						background-position: -96px 0px
+					&:hover
+						&:before
+							background-position: -96px -35px	
+
+				&.contacts
+					&:before
+						background-position: -135px 0px
+					&:hover
+						&:before
+							background-position: -135px -35px			

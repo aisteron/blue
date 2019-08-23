@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>{{.Params.Title}}</title>
+
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+
+	{{ $stylesheet := .Site.Data.webpack_assets.app }}
+	{{ with $stylesheet.css }}
+	<link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet">
+	{{ end }}
+
+	{{ range .Site.Params.custom_css }}
+	<link rel="stylesheet" href="{{ relURL ($.Site.BaseURL) }}{{ . }}">
+	{{ end }}
+
+	{{ block "favicon" . }}
+	{{ partial "site-favicon.html" . }}
+	{{ end }}
+
+
+	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
+	{{ template "_internal/google_analytics_async.html" . }}
+	{{ end }}
+</head>
+
+<body>
+	<main class="right-sidebar">
+		<header>
+			{{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}	
+		</header>
+
+		<div class="banner">
+			{{ block "banner" . }}{{ partial "banner.html" .}}{{ end }}
+		</div>
+
+		<aside class="right">
+			{{ block "right-aside" . }}{{ partial "right-aside.html" .}}{{ end }}
+		</aside>
+
+		<article>
+			{{ .Content }}
+		</article>
+		<footer>
+			{{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+		</footer>
+			
+
+	</main>
+
+</body>
+
+</html>

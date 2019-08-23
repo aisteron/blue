@@ -1,0 +1,83 @@
+@import "normalize"
+body 
+	//color: grey
+	background-color: #597f9b
+
+/*layout*/
+main
+	width: 1000px
+	margin: 0 auto
+	display: grid
+	grid-template-areas: "header header  header" "banner banner banner" "left content right" "footer footer footer"
+	grid-template-columns: 250px  1fr  290px
+	header
+		grid-area: header
+	.banner
+		grid-area: banner
+	aside.left
+		grid-area: left
+	aside.right
+		grid-area: right
+	article
+		grid-area: content
+
+	footer
+		grid-area: footer
+
+main.right-sidebar
+	width: 1000px
+	margin: 0 auto
+	display: grid
+	grid-template-areas: "header header  header" "banner banner banner" "content content right" "footer footer footer"
+	grid-template-columns: 250px  1fr  290px
+	header
+		grid-area: header
+	.banner
+		grid-area: banner
+	aside.right
+		grid-area: right
+	article
+		grid-area: content
+	footer
+		grid-area: footer
+
+main.no-sidebar
+	width: 1000px
+	margin: 0 auto
+	display: grid
+	grid-template-areas: "header header  header" "banner banner banner" "content content content" "footer footer footer"
+	grid-template-columns: 1fr
+	header
+		grid-area: header
+	.banner
+		grid-area: banner
+	article
+		grid-area: content
+	footer
+		grid-area: footer		
+
+
+
+main
+	background-color: #fff
+
+	@import "/partials/header"
+	@import "/partials/banner"
+	@import "/partials/aside.left"
+	@import "/partials/aside.right"
+	@import "/partials/article"
+	@import "/partials/footer"
+
+a.red-button
+	background: #b3102d
+	box-shadow: 2px 2px 0 #aeaeae
+	color: #fff
+	text-transform: uppercase
+	text-decoration: none
+	padding: 0.4rem
+	margin: 1rem auto
+	display: block
+	width: 177px
+	text-align: center
+
+
