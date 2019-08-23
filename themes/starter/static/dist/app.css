@@ -417,18 +417,29 @@ main {
       main > article .video-list .item {
         width: 435px; }
   main > footer {
-    display: flex; }
+    display: flex;
+    border-top: 2px solid #eee;
+    padding-top: 1rem;
+    justify-content: space-around; }
     main > footer p.copy {
       font-size: 0.7rem;
-      width: 250px;
-      padding: 0 1rem;
       align-self: flex-end; }
-    main > footer .right-part p {
-      color: #a5a5a5;
-      background-color: #e4e4e4;
-      padding: 8px 18px 0 18px;
-      font-size: 10px;
-      margin: 0; }
+    main > footer .right-part {
+      align-self: flex-end;
+      padding: 0.5rem; }
+      main > footer .right-part p {
+        color: #a5a5a5;
+        font-size: 10px;
+        margin: 0; }
+    main > footer ul {
+      list-style: none;
+      display: flex;
+      margin-bottom: 0.5rem; }
+      main > footer ul li {
+        padding: 0 0.5rem;
+        cursor: pointer; }
+        main > footer ul li:hover {
+          opacity: 0.5; }
 
 a.red-button {
   background: #b3102d;
