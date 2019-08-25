@@ -1,0 +1,26 @@
+
+<div class="item">
+
+	{{ range $elem_val := .Resources }}
+	{{$image := $elem_val.Resize "110x188"}}
+	<img src= "{{ $image.RelPermalink }}">
+	{{ end }}
+
+	<div class="desc">
+		<a href="{{ .URL }}"> {{ .Title }} </a>
+		<p>{{- .Params.excerpt -}}</p>
+		<p class="price">{{- .Params.price}} руб.</p>
+	</div>	
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
