@@ -6,6 +6,9 @@ body
 /*layout*/
 main
 	width: 1000px
+	@media (max-width: 1000px)
+		width: 100vw
+		grid-template-columns: 33%  1fr  33%
 	margin: 0 auto
 	display: grid
 	grid-template-areas: "header header  header" "banner banner banner" "left content right" "footer footer footer"
