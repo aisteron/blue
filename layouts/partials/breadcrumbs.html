@@ -1,0 +1,16 @@
+
+{{ $array := split .Parent.Permalink "/" }}
+<div class="bread">
+	{{if eq (len $array) 4}}
+		<a href="/">Главная</a> <span class="delimeter">/</span>	
+	{{else if eq (len $array) 6}}
+		<a href="/">Главная</a> <span class="delimeter">/</span>	
+		<a href="/filters/">Фильтры</a> <span class="delimeter">/</span>
+		<a href="{{ .Parent.Permalink }}">{{ .Parent.Title }}</a> <span class="delimeter">/</span>
+	{{else}}
+			<a href="/">Главная</a> <span class="delimeter">/</span>	
+			<a href="{{ .Parent.Permalink }}">{{ .Parent.Title }}</a> <span class="delimeter">/</span>	
+	{{end}}
+	
+	<span> {{.Title}}</span>
+</div>

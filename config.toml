@@ -3,5 +3,6 @@ languageCode = "ru"
 title = "My New Hugo Site"
 theme="starter"
 disableHugoGeneratorInject = true
+paginate = 10
 [params]
 	favicom = "favicon.ico"

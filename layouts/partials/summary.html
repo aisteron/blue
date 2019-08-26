@@ -1,7 +1,7 @@
 
 <div class="item">
 
-	{{ range $elem_val := .Resources }}
+	{{ range $elem_val := .Resources.Match "cover.jpg" }}
 	{{$image := $elem_val.Resize "110x188"}}
 	<img src= "{{ $image.RelPermalink }}">
 	{{ end }}

@@ -1,0 +1,15 @@
+
+<div class="item">
+
+	{{ range $elem_val := .Resources.Match "cover.jpg" }}
+		<img src= "{{ $elem_val.RelPermalink }}" loading="lazy">
+	{{ end }}
+
+	<div class="desc">
+		
+		<a href="{{ .URL }}"> {{ .Title }} </a>
+		<p class="date">{{ .PublishDate.Format "02.01.2006" }}</p>
+		<p>{{- .Params.excerpt -}}</p>
+	</div>	
+	
+</div>

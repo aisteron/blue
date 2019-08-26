@@ -1,5 +1,5 @@
 > article
-    padding: 25px 10px 25px 20px
+    padding: 4px 10px 25px 20px
     h1
     	color: #01539c
     	font-size: 1.5rem
@@ -18,6 +18,21 @@
         flex-wrap: wrap
         .item
             width: 435px
+    ul.pagination
+        display: flex
+        list-style: none
+        padding: 0
+        li
+            padding-right: 1rem 
+            &.active
+                a
+                    text-decoration: none 
+    .news-list
+        .item
+            display: flex
+            margin-bottom: 1rem
+            img
+                margin-right: 1rem
     .filter-list
         display: flex
         flex-wrap: wrap
@@ -25,6 +40,7 @@
             border: 1px solid #d0d0d0
             border-radius: 6px
             display: flex
+            align-items: flex-start
             width: 445px
             margin-right: 1rem
             margin-bottom: 1rem
@@ -38,7 +54,31 @@
                 background: #eee
                 padding: 1rem
                 margin-left: 1rem
+                &.cat
+                   margin-left: 0rem 
                 .price
                     color: #de1d1d
                     font-size: 1.5rem
-
+    .bread
+        background: #eee
+        margin-left: -20px
+        margin-right: -10px
+        padding: 0.5rem
+        padding-left: 20px
+    ul.gallery
+        padding: 0
+        list-style: none
+        display: flex
+        li
+            margin-right: 0.5rem
+    .filter-price
+        color: #de1d1d
+        font-size: 1.5rem              
+    .filter-desc
+        display: flex
+        align-items: flex-start
+        > .rest
+            padding-left: 1rem
+            ul
+                padding: 0
+                list-style-position: inside

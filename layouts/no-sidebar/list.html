@@ -39,13 +39,59 @@
 		</div>
 
 		<article>
+			{{ partial "breadcrumbs.html" . }}
 			{{ .Content }}
 			
-		<div class="filter-list">
-			{{ range .Paginator.Pages }}
-				{{- partial "summary.html" . -}}
-			{{ end }}
-		</div>
+		
+			{{if eq .CurrentSection.URL "/filters/"}}
+			
+			<div class="filter-list">
+				<div class="item">
+					<img src="/pages/filters/110-188-1.jpg">
+					<div class="desc cat">
+						<a href="flat/">Для квартиры</a>
+						<p><b>Очистка воды в квартире</b> – это не просто прихоть, это важная часть здорового существования человека. Вода в наши дома, попадает не напрямую из реки или озера, она проходит предварительную очистку на городских очистных сооружениях.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/pages/filters/110-188-2.jpg">
+					<div class="desc cat">
+						<a href="cottage/">Для коттеджа</a>
+						<p><b>Очистка воды в коттедже</b> — задача особого рода. В отличие от квартир, коттеджи и дачи «питаются» из артезианских источников или скважин. Разумеется, она гораздо лучшего качества, чем водопроводная. К сожалению, не все скважины на 100% чистые, а потому, без предварительной очистки и фильтрации употреблять такую жидкость не хочется.</p>
+					</div>
+
+				</div>
+				<div class="item">
+					<img src="/pages/filters/110-188-3.jpg">
+					<div class="desc cat">
+						<a href="ind/">Промышленные</a>
+						<p>Главные достоинства <b>промышленных фильтров</b> - это большой ресурс, малые падения давления воды, проведение регенерации фильтрующей засыпки без необходимости разбирать корпус. Мы не только изучили и внедрили лучшие мировые разработки зернистых загрузок, но и разработали свои.</p>
+					</div>
+				</div>
+			</div>
+
+			{{else if eq .CurrentSection.URL "/news/"}}
+				<div class="news-list">
+					{{ range .Paginator.Pages }}
+						{{- partial "newslist.html" . -}}
+					{{ end }}
+				</div>
+				{{ template "_internal/pagination.html" . }}
+
+			{{else}}	
+				
+				<div class="filter-list">
+					{{ range .Paginator.Pages }}
+						{{- partial "summary.html" . -}}
+					{{ end }}
+					{{ template "_internal/pagination.html" . }}
+
+				</div>
+
+			{{end}}
+
+
+		
 		
 		</article>
 		<footer>

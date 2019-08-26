@@ -398,7 +398,7 @@ main {
     main aside.right a.news-archive {
       color: #2a466e; }
   main > article {
-    padding: 25px 10px 25px 20px; }
+    padding: 4px 10px 25px 20px; }
     main > article h1 {
       color: #01539c;
       font-size: 1.5rem;
@@ -416,6 +416,19 @@ main {
       flex-wrap: wrap; }
       main > article .video-list .item {
         width: 435px; }
+    main > article ul.pagination {
+      display: flex;
+      list-style: none;
+      padding: 0; }
+      main > article ul.pagination li {
+        padding-right: 1rem; }
+        main > article ul.pagination li.active a {
+          text-decoration: none; }
+    main > article .news-list .item {
+      display: flex;
+      margin-bottom: 1rem; }
+      main > article .news-list .item img {
+        margin-right: 1rem; }
     main > article .filter-list {
       display: flex;
       flex-wrap: wrap; }
@@ -423,6 +436,7 @@ main {
         border: 1px solid #d0d0d0;
         border-radius: 6px;
         display: flex;
+        align-items: flex-start;
         width: 445px;
         margin-right: 1rem;
         margin-bottom: 1rem;
@@ -436,9 +450,34 @@ main {
           background: #eee;
           padding: 1rem;
           margin-left: 1rem; }
+          main > article .filter-list .item .desc.cat {
+            margin-left: 0rem; }
           main > article .filter-list .item .desc .price {
             color: #de1d1d;
             font-size: 1.5rem; }
+    main > article .bread {
+      background: #eee;
+      margin-left: -20px;
+      margin-right: -10px;
+      padding: 0.5rem;
+      padding-left: 20px; }
+    main > article ul.gallery {
+      padding: 0;
+      list-style: none;
+      display: flex; }
+      main > article ul.gallery li {
+        margin-right: 0.5rem; }
+    main > article .filter-price {
+      color: #de1d1d;
+      font-size: 1.5rem; }
+    main > article .filter-desc {
+      display: flex;
+      align-items: flex-start; }
+      main > article .filter-desc > .rest {
+        padding-left: 1rem; }
+        main > article .filter-desc > .rest ul {
+          padding: 0;
+          list-style-position: inside; }
   main > footer {
     display: flex;
     border-top: 2px solid #eee;
