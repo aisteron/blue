@@ -8,8 +8,15 @@
 	</ul>
 </div>
 <div class="slide">
-	<img src="/0.webp" 
-	onerror="this.onerror=null; 
-	this.src='/0.jpg'" 
-	style="height:100%; width: 750px">
+<!-- 	<img src="/0.webp" 
+onerror="this.onerror=null; 
+this.src='/0.jpg'" 
+style="height:100%; width: 100%">
+ -->
+	<picture>
+	<source media="(max-width: 879px)" sizes="0px" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w">
+
+	<source media="(min-width: 880px)" sizes="300px" srcset="/0.webp">
+	<img src="/0.jpg" alt="This is a default image" style="height:100%; width: 100%">
+</picture>
 </div>

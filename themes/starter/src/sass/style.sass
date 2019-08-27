@@ -6,60 +6,58 @@ body
 /*layout*/
 main
 	width: 1000px
-	@media (max-width: 1000px)
-		width: 100vw
-		grid-template-columns: 33%  1fr  33%
 	margin: 0 auto
 	display: grid
 	grid-template-areas: "header header  header" "banner banner banner" "left content right" "footer footer footer"
 	grid-template-columns: 250px  1fr  290px
+
+	@media (max-width: 1000px)
+		width: 95vw
+		grid-template-columns: 25%  1fr  25%
+	@media (max-width: 880px)
+		width: 100%
+		grid-template-columns: 1fr
+		grid-template-areas: "header header  header" "content content content" "footer footer footer"
+	
+	/* right-sizebar */
+
+	&.right-sidebar
+		grid-template-areas: "header header  header" "banner banner banner" "content content right" "footer footer footer"
+		grid-template-columns: 250px  1fr  290px
+		@media (max-width: 1000px)
+			grid-template-areas: "header header  header" "banner banner banner" "content content content" "footer footer footer"
+			grid-template-columns: 1fr
+	
+	/* no-sidebar */
+
+	&.no-sidebar
+		grid-template-areas: "header header  header" "banner banner banner" "content content content" "footer footer footer"
+		grid-template-columns: 1fr	
+		
+	
 	header
 		grid-area: header
+		@media (max-width: 1000px)
+			width: 100%	
 	.banner
 		grid-area: banner
+		@media (max-width: 1000px)
+			width: 95vw
+		@media (max-width: 880px)
+			display: none !important	
 	aside.left
 		grid-area: left
+		@media (max-width: 880px)
+			display: none
 	aside.right
 		grid-area: right
+		@media (max-width: 880px)
+			display: none
 	article
 		grid-area: content
 
 	footer
 		grid-area: footer
-
-main.right-sidebar
-	width: 1000px
-	margin: 0 auto
-	display: grid
-	grid-template-areas: "header header  header" "banner banner banner" "content content right" "footer footer footer"
-	grid-template-columns: 250px  1fr  290px
-	header
-		grid-area: header
-	.banner
-		grid-area: banner
-	aside.right
-		grid-area: right
-	article
-		grid-area: content
-	footer
-		grid-area: footer
-
-main.no-sidebar
-	width: 1000px
-	margin: 0 auto
-	display: grid
-	grid-template-areas: "header header  header" "banner banner banner" "content content content" "footer footer footer"
-	grid-template-columns: 1fr
-	header
-		grid-area: header
-	.banner
-		grid-area: banner
-	article
-		grid-area: content
-	footer
-		grid-area: footer		
-
-
 
 main
 	background-color: #fff

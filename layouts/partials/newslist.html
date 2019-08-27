@@ -2,7 +2,7 @@
 <div class="item">
 
 	{{ range $elem_val := .Resources.Match "cover.jpg" }}
-		<img src= "{{ $elem_val.RelPermalink }}" loading="lazy">
+		<img data-src= "{{ $elem_val.RelPermalink }}" loading="lazy" class="lazyloading">
 	{{ end }}
 
 	<div class="desc">

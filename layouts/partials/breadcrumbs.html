@@ -1,16 +1,54 @@
 
-{{ $array := split .Parent.Permalink "/" }}
+{{ $array := split .Permalink "/" }}
 <div class="bread">
-	{{if eq (len $array) 4}}
-		<a href="/">Главная</a> <span class="delimeter">/</span>	
-	{{else if eq (len $array) 6}}
-		<a href="/">Главная</a> <span class="delimeter">/</span>	
-		<a href="/filters/">Фильтры</a> <span class="delimeter">/</span>
-		<a href="{{ .Parent.Permalink }}">{{ .Parent.Title }}</a> <span class="delimeter">/</span>
-	{{else}}
-			<a href="/">Главная</a> <span class="delimeter">/</span>	
-			<a href="{{ .Parent.Permalink }}">{{ .Parent.Title }}</a> <span class="delimeter">/</span>	
-	{{end}}
+	<!-- 
+			цифра в скобках - для билда
+			придется каждый раз настраивать
+
+			{{len $array}}
+	 -->
 	
-	<span> {{.Title}}</span>
+
+	<!--
+			7 (5) - страница товара
+			путь:
+			 Главная
+			 Фильтры
+			 Фильтры для квартиры
+			 Название фильтра
+	-->
+		{{if eq (len $array) 5}}
+			<a href="/">Главная</a> <span class="delimeter">/</span>
+			<a href="/filters/">Фильтры</a> <span class="delimeter">/</span>
+			<a href="{{ .Parent.Permalink }}">{{ .Parent.Title }}</a> <span class="delimeter">/</span>
+			<span> {{.Title}} </span>
+		{{end}}
+	<!--
+			6 (4) - страница группы товаров
+			путь:
+			 Главная
+			 Фильтры
+			 Фильтры для квартиры
+			 
+	-->	
+		{{if eq (len $array) 4}}
+			<a href="/">Главная</a> <span class="delimeter">/</span>
+			<a href="{{ .Parent.Permalink }}">{{ .Parent.Title }}</a> <span class="delimeter">/</span>
+			<span> {{.Title}} </span>
+		{{end}}
+
+	<!--
+			5 (3) - страница первого уровня:
+				- вакансии
+				- отзывы
+				- фильтры
+			путь:
+			 Главная
+			 Название страницы			 
+	-->
+		{{if eq (len $array) 3}}
+			<a href="/">Главная</a> <span class="delimeter">/</span>
+			<span> {{.Title}} </span>
+		{{end}}
+
 </div>

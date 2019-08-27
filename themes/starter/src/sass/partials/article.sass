@@ -1,9 +1,14 @@
 > article
-    padding: 4px 10px 25px 20px
+    padding: 0 10px 25px 20px
+    @media (max-width: 600px)
+        padding: 0 1rem
     h1
     	color: #01539c
     	font-size: 1.5rem
     	font-weight: normal
+    /*h1.main-h1
+        @media (max-width: 600px)
+            margin-top: 0*/
     p, ul li
     	color: #545454
     	font-size: 0.9rem
@@ -18,6 +23,11 @@
         flex-wrap: wrap
         .item
             width: 435px
+            @media (max-width: 600px)
+                width: 100vw
+                iframe
+                    width: 86vw
+
     ul.pagination
         display: flex
         list-style: none
@@ -31,8 +41,13 @@
         .item
             display: flex
             margin-bottom: 1rem
+            align-items: flex-start
             img
                 margin-right: 1rem
+            @media (max-width: 600px)
+                flex-wrap: wrap    
+            
+
     .filter-list
         display: flex
         flex-wrap: wrap
@@ -50,12 +65,24 @@
             &:hover
                 box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15)
                 border: 1px solid #eee
+            > span
+                min-width: 110px
+                height: 100%
+                background-size: cover    
+            .n188-1
+                background-image:url(/pages/filters/110-188-1.jpg)
+            .n188-2
+                background-image:url(/pages/filters/110-188-2.jpg)
+            .n188-3
+                background-image:url(/pages/filters/110-188-3.jpg)
+                
             .desc
                 background: #eee
                 padding: 1rem
                 margin-left: 1rem
                 &.cat
-                   margin-left: 0rem 
+                   margin-left: 0rem
+                   height: 100% 
                 .price
                     color: #de1d1d
                     font-size: 1.5rem
@@ -65,10 +92,15 @@
         margin-right: -10px
         padding: 0.5rem
         padding-left: 20px
+        @media (max-width: 880px)
+            margin-left: -1rem 
+            margin-right: -1rem 
     ul.gallery
         padding: 0
         list-style: none
         display: flex
+        @media (max-width: 600px)
+            flex-wrap: wrap
         li
             margin-right: 0.5rem
     .filter-price
@@ -77,8 +109,16 @@
     .filter-desc
         display: flex
         align-items: flex-start
+        @media (max-width: 600px)
+            flex-wrap: wrap
+        > img
+            @media (max-width: 600px)
+                width: 100%  
         > .rest
             padding-left: 1rem
             ul
                 padding: 0
                 list-style-position: inside
+    .main-photo
+        @media (max-width: 600px)
+            width: 100%                

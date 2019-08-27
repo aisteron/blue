@@ -4,26 +4,34 @@
 	align-items: center
 	height: 156px
 	position: relative
+	@media (max-width: 880px)
+		border-bottom: 1px solid #eee
+		justify-content: unset
+	@media (max-width: 600px)
+			height: 40px
+			background-color: #597f9b
+
+	> a
+		@media (max-width: 600px)
+			display: none	
 	.red-nav
 		position: absolute
 		bottom: 0
+		@media (max-width: 600px)
+			display: none
 		ul 
 			display: flex
 			list-style: none
 			padding-left: 7.6rem
 			margin-bottom: 0
-			li 
+			li
+				border-right: 1px solid #d26678 
 				padding: 0.4rem 1rem
 				position: relative
 				background: linear-gradient(to bottom,  #d80217 0%,#d60117 43%,#b30f2d 66%,#b30f2d 100%)
+			    
 				&:nth-of-type(1)
 					border-radius: 5px 0 0 0
-				
-				&:after
-					content: '|'
-					position: absolute
-					right: -2px
-					color: #fff
 				&:nth-of-type(3)
 					border-radius: 0 5px 0 0
 					&:after
@@ -40,8 +48,18 @@
 		color: #01539c
 		font-size: 22px
 		padding-left: 3rem
+		@media (max-width: 600px)
+			display: none
 	.arrow
-		background-image: url("/phone.webp")
+		@media (max-width: 1100px)
+			margin-right: 0
+			width: 288px
+			p
+				padding: 0 1.5rem !important
+		@media (max-width: 880px)
+			display: none !important
+		@media (min-width: 880px)				
+			background-image: url("/phone.webp")
 		background-repeat: no-repeat
 		width: 312px
 		height: 90px
@@ -56,3 +74,33 @@
 				font-size: 32px
 			&:nth-of-type(2)
 				margin-top: -3px			
+	
+	ul.mobile-header
+		color: #fff
+		list-style: none
+		width: 100vw
+		padding: 0 1rem
+		@media (max-width: 600px)
+			display: flex !important
+			justify-content: space-between
+		li
+			&.logo
+				font-weight: bold
+			a
+				color: #fff
+				text-decoration: none
+		nav
+			background: #333
+			position: absolute
+			width: 250px
+			top: 0
+			left: -1rem
+			height: 100vh
+			padding: 1rem
+			ul
+				list-style: none
+				li
+					line-height: 3rem				
+
+
+					

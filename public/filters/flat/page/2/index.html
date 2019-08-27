@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Фильтры для квартиры</title>
+
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+
+	
+	<style>
+		html{box-sizing:border-box}*{box-sizing:inherit}*::before,*::after{box-sizing:inherit}:root{-moz-tab-size:4;-o-tab-size:4;tab-size:4}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'}hr{height:0}abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:SFMono-Regular,Consolas,'Liberation Mono',Menlo,Courier,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}button,[type='button'],[type='reset'],[type='submit']{-webkit-appearance:button}button::-moz-focus-inner,[type='button']::-moz-focus-inner,[type='reset']::-moz-focus-inner,[type='submit']::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type='button']:-moz-focusring,[type='reset']:-moz-focusring,[type='submit']:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{padding:0}progress{vertical-align:baseline}[type='number']::-webkit-inner-spin-button,[type='number']::-webkit-outer-spin-button{height:auto}[type='search']{-webkit-appearance:textfield;outline-offset:-2px}[type='search']::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}body{background-color:#597f9b}main{width:1000px;margin:0 auto;display:grid;grid-template-areas:"header header  header" "banner banner banner" "left content right" "footer footer footer";grid-template-columns:250px 1fr 290px}@media (max-width:1000px){main{width:95vw;grid-template-columns:25% 1fr 25%}}@media (max-width:880px){main{width:100%;grid-template-columns:1fr;grid-template-areas:"header header  header" "content content content" "footer footer footer"}}main.right-sidebar{grid-template-areas:"header header  header" "banner banner banner" "content content right" "footer footer footer";grid-template-columns:250px 1fr 290px}@media (max-width:1000px){main.right-sidebar{grid-template-areas:"header header  header" "banner banner banner" "content content content" "footer footer footer";grid-template-columns:1fr}}main.no-sidebar{grid-template-areas:"header header  header" "banner banner banner" "content content content" "footer footer footer";grid-template-columns:1fr}main header{grid-area:header}@media (max-width:1000px){main header{width:100%}}main .banner{grid-area:banner}@media (max-width:1000px){main .banner{width:95vw}}@media (max-width:880px){main .banner{display:none!important}}main aside.left{grid-area:left}@media (max-width:880px){main aside.left{display:none}}main aside.right{grid-area:right}@media (max-width:880px){main aside.right{display:none}}main article{grid-area:content}main footer{grid-area:footer}main{background-color:#fff}main>header{display:flex;justify-content:space-around;align-items:center;height:156px;position:relative}@media (max-width:880px){main>header{border-bottom:1px solid #eee;justify-content:unset}}@media (max-width:600px){main>header{height:40px;background-color:#597f9b}}@media (max-width:600px){main>header>a{display:none}}main>header .red-nav{position:absolute;bottom:0}@media (max-width:600px){main>header .red-nav{display:none}}main>header .red-nav ul{display:flex;list-style:none;padding-left:7.6rem;margin-bottom:0}main>header .red-nav ul li{border-right:1px solid #d26678;padding:.4rem 1rem;position:relative;background:linear-gradient(to bottom,#d80217 0%,#d60117 43%,#b30f2d 66%,#b30f2d 100%)}main>header .red-nav ul li:nth-of-type(1){border-radius:5px 0 0 0}main>header .red-nav ul li:nth-of-type(3){border-radius:0 5px 0 0}main>header .red-nav ul li:nth-of-type(3):after{content:''}main>header .red-nav ul li:hover{background:linear-gradient(to bottom,#b30f2d 0%,#b30f2d 34%,#d60117 57%,#d80217 100%)}main>header .red-nav ul li a{color:#fff;text-decoration:none}main>header span.desc{width:460px;color:#01539c;font-size:22px;padding-left:3rem}@media (max-width:600px){main>header span.desc{display:none}}main>header .arrow{background-repeat:no-repeat;width:312px;height:90px;color:#fff;font-size:22px;margin-right:-2.7rem}@media (max-width:1100px){main>header .arrow{margin-right:0;width:288px}main>header .arrow p{padding:0 1.5rem!important}}@media (max-width:880px){main>header .arrow{display:none!important}}@media (min-width:880px){main>header .arrow{background-image:url(/phone.webp)}}main>header .arrow p{margin:0;padding:0 2rem;text-align:left}main>header .arrow p .bigger{font-size:32px}main>header .arrow p:nth-of-type(2){margin-top:-3px}main>header ul.mobile-header{color:#fff;list-style:none;width:100vw;padding:0 1rem}@media (max-width:600px){main>header ul.mobile-header{display:flex!important;justify-content:space-between}}main>header ul.mobile-header li.logo{font-weight:700}main>header ul.mobile-header li a{color:#fff;text-decoration:none}main>header ul.mobile-header nav{background:#333;position:absolute;width:250px;top:0;left:-1rem;height:100vh;padding:1rem}main>header ul.mobile-header nav ul{list-style:none}main>header ul.mobile-header nav ul li{line-height:3rem}main .banner{background-color:#efeeee;display:flex;border-bottom:4px solid #969696}main .banner .side-nav{width:250px;display:flex;align-items:center}main .banner .side-nav ul{list-style:none;padding-left:4rem}main .banner .side-nav ul li{height:45px;position:relative;cursor:pointer}main .banner .side-nav ul li a{color:#333;text-decoration:none}main .banner .side-nav ul li:before{content:'';height:35px;width:32px;display:inline-block;background-image:url(/contact.webp);background-repeat:no-repeat;position:absolute;left:-3rem;top:-5px}main .banner .side-nav ul li.vacancy:before{background-position:4px 0}main .banner .side-nav ul li.vacancy:hover:before{background-position:4px -35px}main .banner .side-nav ul li.review:before{background-position:-32px 0}main .banner .side-nav ul li.review:hover:before{background-position:-32px -35px}main .banner .side-nav ul li.video:before{background-position:-64px 0}main .banner .side-nav ul li.video:hover:before{background-position:-64px -35px}main .banner .side-nav ul li.nofake:before{background-position:-96px 0}main .banner .side-nav ul li.nofake:hover:before{background-position:-96px -35px}main .banner .side-nav ul li.contacts:before{background-position:-135px 0}main .banner .side-nav ul li.contacts:hover:before{background-position:-135px -35px}main aside.left{background-color:#efeeee;padding:.4rem}main aside.left .cert-wrap a{text-decoration:none}main aside.left .cert-wrap img{margin:.4rem;border:1px solid #ccc}main aside.right{background-color:#efeeee;padding:14px 12px 14px 25px}@media (max-width:1000px){main aside.right{padding:.5rem}}main aside.right .news-list .item{width:253px;border:1px solid #fff;padding:.5rem;margin-bottom:.5rem}@media (max-width:1000px){main aside.right .news-list .item{width:90%}main aside.right .news-list .item .head{flex-wrap:wrap}}main aside.right .news-list .item .head{display:flex}main aside.right .news-list .item .head img{min-width:130px;margin-right:.5rem;border:1px #5b7ba4 solid}main aside.right .news-list .item .head p.title{font-size:12px;font-weight:700}main aside.right .news-list .item .head p.date{font-size:10px}main aside.right .news-list .item .head p.date:after{content:'';clear:both}main aside.right .news-list .item p.excerpt{font-size:13px;line-height:14px;text-align:justify}main aside.right .news-list .item p.more{text-align:right;font-size:12px}main aside.right .news-list .item p.more a{color:#2a466e}main aside.right a.news-archive{color:#2a466e}main>article{padding:0 10px 25px 20px}@media (max-width:600px){main>article{padding:0 1rem}}main>article h1{color:#01539c;font-size:1.5rem;font-weight:400}main>article p,main>article ul li{color:#545454;font-size:.9rem}main>article .review-list .item{padding:1rem}main>article .review-list .item:nth-of-type(2n+1){background:#eee}main>article .video-list{display:flex;justify-content:space-between;flex-wrap:wrap}main>article .video-list .item{width:435px}@media (max-width:600px){main>article .video-list .item{width:100vw}main>article .video-list .item iframe{width:86vw}}main>article ul.pagination{display:flex;list-style:none;padding:0}main>article ul.pagination li{padding-right:1rem}main>article ul.pagination li.active a{text-decoration:none}main>article .news-list .item{display:flex;margin-bottom:1rem;align-items:flex-start}main>article .news-list .item img{margin-right:1rem}@media (max-width:600px){main>article .news-list .item{flex-wrap:wrap}}main>article .filter-list{display:flex;flex-wrap:wrap}main>article .filter-list .item{border:1px solid #d0d0d0;border-radius:6px;display:flex;align-items:flex-start;width:445px;margin-right:1rem;margin-bottom:1rem;margin-top:1rem;transition:1s all;box-shadow:0 1px 5px rgba(0,0,0,0)}main>article .filter-list .item:hover{box-shadow:0 1px 5px rgba(0,0,0,.15);border:1px solid #eee}main>article .filter-list .item>span{min-width:110px;height:100%;background-size:cover}main>article .filter-list .item .n188-1{background-image:url(/pages/filters/110-188-1.jpg)}main>article .filter-list .item .n188-2{background-image:url(/pages/filters/110-188-2.jpg)}main>article .filter-list .item .n188-3{background-image:url(/pages/filters/110-188-3.jpg)}main>article .filter-list .item .desc{background:#eee;padding:1rem;margin-left:1rem}main>article .filter-list .item .desc.cat{margin-left:0rem;height:100%}main>article .filter-list .item .desc .price{color:#de1d1d;font-size:1.5rem}main>article .bread{background:#eee;margin-left:-20px;margin-right:-10px;padding:.5rem;padding-left:20px}@media (max-width:880px){main>article .bread{margin-left:-1rem;margin-right:-1rem}}main>article ul.gallery{padding:0;list-style:none;display:flex}@media (max-width:600px){main>article ul.gallery{flex-wrap:wrap}}main>article ul.gallery li{margin-right:.5rem}main>article .filter-price{color:#de1d1d;font-size:1.5rem}main>article .filter-desc{display:flex;align-items:flex-start}@media (max-width:600px){main>article .filter-desc{flex-wrap:wrap}}@media (max-width:600px){main>article .filter-desc>img{width:100%}}main>article .filter-desc>.rest{padding-left:1rem}main>article .filter-desc>.rest ul{padding:0;list-style-position:inside}@media (max-width:600px){main>article .main-photo{width:100%}}main>footer{display:flex;border-top:2px solid #eee;justify-content:space-around}@media (max-width:880px){main>footer{flex-wrap:wrap}}main>footer p.copy{font-size:.7rem;align-self:flex-end}main>footer .right-part{align-self:flex-end;padding:.5rem}main>footer .right-part p{color:#a5a5a5;font-size:10px;margin:0}main>footer ul{list-style:none;display:flex;margin-bottom:.5rem}main>footer ul li{padding:0 .5rem;cursor:pointer}main>footer ul li:hover{opacity:.5}a.red-button{background:#b3102d;box-shadow:2px 2px 0 #aeaeae;color:#fff;text-transform:uppercase;text-decoration:none;padding:.4rem;margin:1rem auto;display:block;width:177px;text-align:center}
+	</style>
+
+	
+	
+	
+
+
+	
+</head>
+
+<body>
+	<main class="no-sidebar">
+		<header>
+			<a href="/">
+<picture>
+	<source media="(max-width: 599px)" sizes="0px" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w">
+
+	<source media="(min-width: 600px)" sizes="300px" srcset="/logo.webp">
+	<img src="/logo.png" alt="This is a default image">
+</picture>
+</a>
+<span class="desc"><b>BLUEFILTERS</b> – системы и фильтры для очистки воды премиум-класса</span>
+<div class="arrow">
+	<p>
+		+375 17
+		<span class="bigger">
+			396-74-74
+		</span>
+	</p>
+	<p>
+		+375 29
+		<span class="bigger">
+			184-0000
+		</span>
+	</p>
+</div>
+<div class="red-nav">
+	<ul>
+		<li><a href="/filters/flat/">Фильтры для квартиры</a></li>
+		<li><a href="/filters/cottage/">Фильтры для коттеджа</a></li>
+		<li><a href="/filters/ind/">Промышленные фильтры</a></li>
+	</ul>
+</div>
+<ul class="mobile-header" style="display: none">
+	<li class="logo"><a href="/">BLUEFILTERS</a></li>
+	<li><a href="tel:+375173967474">+375 17 396-74-74</a></li>
+	<li class="openMenu">☰</li>
+	<nav style="display: none">
+		<ul>
+			<li><a href="/">Главная</a></li>
+			<li><a href="/filters/">Фильтры</a></li>
+			<li><a href="/review/">Отзывы</a></li>
+			<li><a href="/video/">Видео</a></li>
+			<li><a href="/news/">Новости</a></li>
+			<li><a href="/contacts/">Контакты</a></li>
+		</ul>
+	</nav>
+</ul>	
+		</header>
+
+		<div class="banner">
+			<div class="side-nav">
+	<ul>
+		<li class="vacancy"><a href="/vacancy/">Вакансии</a></li>
+		<li class="review"><a href="/review/">Отзывы</a></li>
+		<li class="video"><a href="/video/">Видео</a></li>
+		<li class="nofake"><a href="/nofake/">Нет подделкам</a></li>
+		<li class="contacts"><a href="/contacts/">Контакты</a></li>
+	</ul>
+</div>
+<div class="slide">
+
+	<picture>
+	<source media="(max-width: 879px)" sizes="0px" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w">
+
+	<source media="(min-width: 880px)" sizes="300px" srcset="/0.webp">
+	<img src="/0.jpg" alt="This is a default image" style="height:100%; width: 100%">
+</picture>
+</div>
+		</div>
+
+		<article>
+			
+
+<div class="bread">
+	
+	
+
+	
+		
+		
+		
+			<a href="/">Главная</a> <span class="delimeter">/</span>
+			<a href="/filters/">Фильтры</a> <span class="delimeter">/</span>
+			<span> Фильтры для квартиры </span>
+		
+
+	
+		
+
+</div>
+			<h1>Фильтры для квартиры</h1>
+<p>Перед системами очистки воды ставятся следующие задачи по очистке от механических примесей (ржавчина, мутность, цветность и т.п.), умягчению (снижение содержания солей жесткости), обезжелезиванию (снижение содержания растворенного железа), дезодорирование и дехлорирование воды, очистка от органических примесей, улучшение вкуса, запаха и цвета.</p>
+<p>Такие задачи в условиях городской квартиры решить несложно с помощью бытовых фильтров для очистки воды. Схема очистки воды в квартире не будет существенно отличаться, даже при использовании фильтров разных производителей и разного принципа действия.</p>
+			
+		
+				
+				
+				<div class="filter-list">
+					
+<div class="item">
+
+	
+	
+	<img src= "/filters/flat/nl9/cover_hud2a9c65362dfa7cde38c369dc41741a9_64342_110x188_resize_q75_box.jpg">
+	
+
+	<div class="desc">
+		<a href="/filters/flat/nl9/"> Фильтр для очистки воды NL-9 </a>
+		<p>Системы очистки воды серии NL-9 для квартир купить в Минске.</p>
+		<p class="price">1958 руб.</p>
+	</div>	
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/filters/flat/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/filters/flat/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/filters/flat/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/filters/flat/page/2/">2</a></li>
+    
+    
+    <li class="page-item disabled">
+    <a  class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/filters/flat/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+
+
+				</div>
+
+			
+
+
+		
+		
+		</article>
+		<footer>
+			
+
+
+<script src="/dist/app.js" async defer></script>
+
+
+
+<p class='copy'>&copy; 2013-2017 ООО "Блюфильтерс"</p>
+<div class="right-part">
+	
+	<p>Свидетельство о государственной регистрации №191842869 от 17.09.2012 г.</p>
+	<p>Интернет-магазин зарегистрирован 04.02.2013 г. в Торговом реестре за № 533</p>
+</div>
+
+<ul>
+	<li><img data-src="/social/vk.svg" loading="lazy" class="lazyload" width="24px"></li>
+	<li><img data-src="/social/twitter.svg" loading="lazy"  class="lazyload" width="24px"></li>
+	<li><img data-src="/social/facebook.svg" loading="lazy"  class="lazyload" width="24px"></li>
+</ul>
+
+		</footer>
+			
+
+	</main>
+
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+<IfModule mod_expires.c>
+    ExpiresActive On
+    # Images
+    ExpiresByType image/webp "access plus 1 year"
+</IfModule>

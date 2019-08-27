@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Фильтры для коттеджа on My New Hugo Site</title>
+    <link>/filters/cottage/</link>
+    <description>Recent content in Фильтры для коттеджа on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Wed, 21 Aug 2019 17:44:03 +0300</lastBuildDate>
+    
+	<atom:link href="/filters/cottage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Система очистки воды Apoli</title>
+      <link>/filters/cottage/apoli/</link>
+      <pubDate>Wed, 21 Aug 2019 17:44:03 +0300</pubDate>
+      
+      <guid>/filters/cottage/apoli/</guid>
+      <description>Система очистки воды Apoli2860 руб.	12 преимуществ
+Удаляет песок и илУдаляет механические частицыУдаляет органические примесиУдаляет соли жесткостиУдаляет железоУдаляет марганецУдаляет хлорУдаляет бактерииУдаляет нитратыУдаляет сероводородСнижает цветность и окисляемостьКорректирует вкус и запахФотогалереяСлишком большая концентрация железа и солей жесткости в воде приводит к зарастанию домашней арматуры, может быть также причиной появления пятен на сантехническом оборудовании, на белье после стирки.</description>
+    </item>
+    
+  </channel>
+</rss>
